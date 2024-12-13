@@ -19,7 +19,7 @@ This Python script simplifies the process of renaming image files in a specified
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/moturkmani/image-renamer.git
+   git clone https://github.com/moturkmani/rename-files.git
    cd image-renamer
    ```
 
