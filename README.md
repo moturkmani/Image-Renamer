@@ -19,7 +19,7 @@ This Python script simplifies the process of renaming image files in a specified
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/yourusername/image-renamer.git
+   git clone https://github.com/moturkmani/image-renamer.git
    cd image-renamer
    ```
 
@@ -41,7 +41,7 @@ This Python script simplifies the process of renaming image files in a specified
 2. **Folder Selection**: The user selects a folder using a file dialog.
 3. **Starting Number**: The user enters a starting number for the new filenames.
 4. **Selecting Name Format**: User selects how to rename the images from 3 options. 
-5. **Renaming**: The script renames all images sequentially (e.g., `image1.jpg`, `image2.png`).
+5. **Renaming**: The script renames all images sequentially in the format you chose (e.g., `image1.jpg`, `image2.png`).
 6. **Completion**: A success message is displayed, and the folder opens (not quite the correct file location).
 
 ## Customization
