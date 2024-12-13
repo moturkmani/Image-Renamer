@@ -23,7 +23,7 @@ This Python script simplifies the process of renaming image files in a specified
    cd image-renamer
    ```
 
-2. Run the script:
+2. Run the script in CMD or PowerShell:
    ```bash
    python rename_files.py
    ```
