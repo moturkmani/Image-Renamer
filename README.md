@@ -1,53 +1,80 @@
 # Image Renamer
 
-This Python script simplifies the process of renaming image files in a specified folder. It uses a graphical user interface (GUI) for a user-friendly experience, making it easy to select folders, set starting numbers, and rename files sequentially.
+## Overview
+The **Image Renamer** is a Python-based GUI application designed to make renaming image files quick and easy. Built using `tkinter`, it provides a user-friendly interface for selecting renaming conventions, ordering, and numbering images within a specified folder.
+
+---
 
 ## Features
+- **User-friendly dialogs**: Provides intuitive prompts for selecting options.
+- **Customizable renaming patterns**: Choose from multiple renaming conventions:
+  - `image1, image2, image3`
+  - `img_01, img_02, img_03`
+  - `image0001, image0002, image0003`
+- **Ascending or descending order**: Rename images in either ascending or descending sequence.
+- **Starting number selection**: Specify the starting number for renaming.
+- **Folder selection dialog**: Easily choose the folder containing images to rename.
+- **Error handling**: Handles invalid inputs and missing files gracefully.
+- **Supports multiple image formats**: `.jpg`, `.jpeg`, `.png`, `.gif`, `.bmp`, `.tiff`, `.webp`.
 
-- **Interactive GUI**: Built with `tkinter`, it provides dialogs for folder selection, number input, and feedback.
-- **Image Filtering**: Automatically identifies and processes image files based on common extensions (e.g., `.jpg`, `.png`, `.gif`).
-- **Sequential Renaming**: Allows users to set a starting number for sequential file naming.
-- **Error Handling**: Provides clear messages if no folder is selected or if no image files are found.
-- **Automatic Folder Opening**: Opens the renamed files' folder upon completion (needs work).
+---
 
-## Requirements
-
+## Prerequisites
 - Python 3.x
-- Required libraries: `tkinter`
+- `tkinter` module (comes pre-installed with Python on most systems).
 
-## How to Use
+---
 
-1. Clone or download the repository:
-
-
-2. Run the script in CMD or PowerShell:
+## Usage
+1. Run the script:
    ```bash
-   python rename_files.py
+   python image_renamer.py
    ```
+2. Follow the prompts:
+   - **Welcome Message**: Start the renaming process.
+   - **Order Selection**: Choose ascending or descending order.
+   - **Folder Selection**: Select the folder containing your images.
+   - **Starting Number**: Enter the starting number for renaming.
+   - **Renaming Convention**: Choose one of the provided patterns.
+3. The program will rename all images in the selected folder based on your inputs.
+4. After successful renaming, your desktop folder will open to confirm completion.
 
-3. Follow the prompts:
-   - Select the folder containing the images.
-   - Enter the starting number for renaming.
-   - Enter which image naming format you prefer.
+---
 
-4. View the renamed files in the folder, which opens automatically after completion (still not working how I want it to).
+## Example
+If you select:
+- Order: `Ascending`
+- Starting number: `1`
+- Renaming convention: `img_01, img_02, img_03`
 
-## Example Workflow
+And your folder contains:
+- `photo.jpg`
+- `image.png`
+- `pic.gif`
 
-1. **Welcome Message**: A welcome dialog greets the user.
-2. **Folder Selection**: The user selects a folder using a file dialog.
-3. **Starting Number**: The user enters a starting number for the new filenames.
-4. **Selecting Name Format**: User selects how to rename the images from 3 options. 
-5. **Renaming**: The script renames all images sequentially in the format you chose (e.g., `image1.jpg`, `image2.png`).
-6. **Completion**: A success message is displayed, and the folder opens (not quite the correct file location).
+The renamed files will be:
+- `img_01.jpg`
+- `img_02.png`
+- `img_03.gif`
 
-## Customization
+---
 
-- Modify `image_extensions` in the script to include additional file types.
-- Adjust naming conventions in the `new_name` variable.
+## Supported Image Formats
+- `.jpg`
+- `.jpeg`
+- `.png`
+- `.gif`
+- `.bmp`
+- `.tiff`
+- `.webp`
 
-## Contributions
+---
 
-Contributions are welcome! Feel free to submit a pull request or open an issue for suggestions or improvements.
+## Acknowledgments
+- Inspired by the need for an efficient tool to rename large batches of images for imgur uploads.
+- Developed with Python and `tkinter`.
 
+## Future Improvements
+- I would like to eventually make this where user will type a naming convention example separated by commas and the script will analyze and copy the naming convention.
+- Make all the buttons colorful and ensure cursor is always active in the input textbox area.
 
