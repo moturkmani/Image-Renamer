@@ -22,7 +22,8 @@ The **Image Renamer** is a Python-based GUI application designed to make renamin
 ## Prerequisites
 - Python 3.x
 - `tkinter` module (comes pre-installed with Python on most systems).
-
+## EXE File
+- If you don't have python installed, you can run the .exe file.
 ---
 
 ## Usage
