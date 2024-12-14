@@ -57,7 +57,7 @@ def rename_files():
 
     # Create a custom messagebox for the welcome dialog
     create_colored_dialog(
-        "Welcome",
+        "IMAGE RENAMER Created By Mo Turkmani",
         "Welcome to the Image Renamer!\nLet's get started.",
         "OK",
         "green"
